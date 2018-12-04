@@ -1,0 +1,831 @@
+/*** Custom Styles ***/
+@font-face {
+	font-family: 'Colfax-Medium';
+	src: url('../fonts/Colfax-Medium.otf');
+}
+@font-face {
+	font-family: 'Colfax-Regular';
+	src: url('../fonts/Colfax-Regular.otf');
+}
+@font-face {
+	font-family: 'Colfax-Light';
+	src: url('../fonts/Colfax-Light.otf');
+}
+@font-face {
+	font-family: 'Colfax-Thin';
+	src: url('../fonts/Colfax-Thin.otf');
+}
+@font-face {
+	font-family: 'AvenirLTStd-Medium';
+	src: url('../fonts/AvenirLTStd-Medium.otf');
+}
+@font-face {
+	font-family: 'AvenirLTStd-Book';
+	src: url('../fonts/AvenirLTStd-Book.otf');
+}
+
+body {
+	background-color: #f7f7f7;
+	font-family: 'Colfax-Light';
+	font-size: 14px;
+	color: #6b6c6f;
+}
+p,span {
+	color: #9ea0a5 !important;
+	font-size: 14px !important;
+	font-weight: 300;
+}
+table th,
+table td,
+p, li {
+	font-size: 14px !important;
+}
+strong {
+	color: #3e3f42;
+}
+code {
+	background: transparent;
+}
+
+::placeholder {
+	font-family: 'Colfax-Light';
+	font-size: 14px;
+    color: #9ea0a5 !important;
+}
+
+/*** Header ***/
+.site-header,
+.site-header .site-logo {
+	height: 70px !important;
+}
+.site-header .site-logo {
+	background-color: #22262e !important;
+}
+
+.site-header .site-logo img {
+	height: 37px;
+}
+.site-header .dropdown.user-menu .dropdown-toggle::after,
+.tbl-typical th > div::before {
+	display: none;
+}
+.site-header .user-menu.dropdown .dropdown-toggle img {
+	border: 1px solid #dcdcdc;
+}
+.site-header .site-header-shown {
+	margin-top: -5px;
+}
+.site-header .store-label {
+	float: left;
+	font-family: 'Colfax-Thin';
+	font-size: 14px;
+	color: #737373;
+	margin-right: 25px;
+}
+.site-header .store-label:before {
+	border-width: 0 3px 5px 3px;
+	border-color: transparent transparent #6c7a86 transparent;
+	margin-top: -6px;
+}
+.site-header .store-label:after {
+	border-width: 5px 3px 0 3px;
+	border-color: #6c7a86 transparent transparent transparent;
+	margin-top: 1px;
+}
+.site-header .store-label:before,
+.site-header .store-label:after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	position: absolute;
+	right: 30%;
+	margin-left: -3px;
+	top: 50%;
+}
+.top-menu a {
+	margin: 0 14px;
+	padding: 21px 0;
+}
+.top-menu a span {
+	color: #6b6c6f !important;
+	font-family: 'Roboto' !important;
+	font-size: 16px !important;
+}
+.top-menu a.current span  {
+	font-weight: 500 !important;
+}
+.top-menu a:hover,
+.top-menu a:focus,
+.top-menu a.current {
+	border-bottom: 3px solid #2dd850;
+	color: #000;
+}
+.site-header .user-menu.dropdown .dropdown-toggle {
+	color: #6b6c6f;
+}
+.site-header .user-menu.dropdown .dropdown-toggle:hover, 
+.site-header .user-menu.dropdown.open .dropdown-toggle {
+	color: #000;
+}
+
+/*** Sidebar ***/
+.side-menu {
+	background-color: #1b1e24 !important;
+}
+.side-menu .jspPane {
+	padding-top: 70px !important;
+}
+.shop-logo {
+	background-color: #1b1e24;
+	border-bottom: 1px solid #2e2e33;
+	border-top: 1px solid #2e2e33;
+	margin-bottom: 20px;
+	padding: 20px 10px 20px 30px;
+}
+.shop-logo label {
+	display: inline-block;
+	font-family: 'AvenirLTStd-Book';
+	font-size: 14px;
+	color: #fff;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+.menu-header,
+.side-menu-list a, 
+.side-menu-list li > span {
+	/*padding: 11px 10px 11px 30px;*/
+	padding: 11px 0 11px 10px;
+	margin: 0 14px;
+	border-radius: 4px;
+}
+.menu-header {
+	color: #fff;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 11px 0 11px 14px;
+}
+.side-menu-list li.menu > span:hover,
+#footer-menu li.title > span:hover {
+	background-color: transparent !important;
+	cursor: auto;
+}
+.side-menu-list .lbl {
+	color: #bcbcbc !important;
+	font-size: 14px;
+	font-weight: 300;
+}
+.top-list li.current a,
+.top-list li.current .lbl,
+.top-list li:hover .lbl,
+.top-list li a:active,
+.top-list li a:hover {
+	background-color: #000 !important;
+	color: #2dd850 !important;
+}
+.side-menu-list a.label-right .label {
+	color: #000 !important;
+	font-family: 'Colfax-Medium';
+	font-size: 11px !important;
+	right: 5px;
+}
+.label-white {
+	background-color: #fff;
+	color: #000;
+}
+
+
+/*** Content ***/
+.left-content,
+.right-content,
+.right-sidebar {
+	vertical-align: top;
+}
+.page-content p {
+	line-height: 22px;
+}
+.page-content img {
+	max-width: 100%;
+	height: auto;
+}
+.title-text {
+	color: #737373;
+	font-family: 'AvenirLTStd-Book';
+	margin-bottom:  3px;
+}
+.subtext {
+	color: #737373;
+	font-family: 'Colfax-Regular';
+	margin-bottom:  3px;
+}
+
+.live .panel-heading:before {
+	float: left;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 35px;
+	background: url('../img/phone.gif') no-repeat;
+	width: 24px;
+	height: 24px;
+}
+.live .title-header {
+	padding-left: 50px;
+}
+.live .title-header,
+.indicator {
+	display: table-cell;
+	vertical-align: middle;
+	max-width: 65px;
+}
+.btn-live {
+	background-color: #eaedf3;
+	border: 1px solid #dadfe7;
+	border-radius: 3px;
+	color: #9ea0a5;
+	font-family: 'Roboto';
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding: 3px 9px;
+}
+.btn-live .fa {
+	font-size: 6px;
+	vertical-align: middle;
+	padding-right: 7px;
+}
+.live-stream {
+	display: table-cell;
+	text-align: right;
+	vertical-align: middle;
+}
+.live-stream .btn-live {
+	background-color: #2dd850;
+	border: 1px solid #26c647;
+	color: #fff !important;
+	font-size: 12px;
+}
+.live .dropdown {
+	display: table-cell !important;
+	position: relative;
+	float: none !important;
+	top: 15px;
+	padding-left: 10px;
+	width: 50px;
+}
+.img-holder,
+.meta-info {
+	display: inline-block;
+	vertical-align: middle;
+}
+.img-holder img {
+	border-radius: 25px;
+	margin-right: 25px;
+}
+.meta-info h5,
+.meta-info p {
+	margin: 0;
+}
+.viewers {
+	margin-top: 15px;
+}
+.viewers .user-photo img {
+	border-radius: 25px;
+	margin-right: 10px;
+}
+.viewers .fa {
+	position: absolute;
+	bottom: 2px;
+	left: 25px;
+	font-size: 9px;
+	border-radius: 25px;	
+	color: #fff;
+	padding: 3px;
+}
+.viewers .user-photo{
+	display: inline-block;
+	position: relative;
+}
+.viewers .fa-thumbs-up {
+	background-color: #f58789;
+}
+.viewers .fa-comment {
+	background-color: #346fde;
+}
+.total-views {
+	background-color: #2dd850;
+	border: 1px solid #d8dce6;
+	border-radius: 5px;
+	color: #fff;
+	display: inline;
+	padding: 5px 7px;
+}
+.total-views i {
+	margin-right: 7px;
+}
+.total-views .total {
+	display: inline;
+	border-left: 1px solid #fff;
+	font-size: 14px;
+	margin-left: 6px;
+	padding-left: 10px;
+}
+
+.img-logo {
+	border: 1px solid #dedede;
+	border-radius: 50%;
+	margin-right: 25px;
+	padding: 10px 14px;
+}
+
+.script-header {
+	background-color: #252529 !important;
+}
+.script-content {
+	background-color: #303136 !important;
+	border-bottom: 0 none !important;
+	border-radius: 0 !important;
+}
+.script .tabs-section-nav.tabs-section-nav-inline .nav {
+	border-bottom: 0 none;
+}
+.script .tabs-section-nav.tabs-section-nav-inline .nav-item {
+	margin: 0 5px 0px 20px;
+}
+.script .tabs-section-nav.tabs-section-nav-inline .nav-link {
+	border: 0 none;
+	height: 55px;
+	padding: 17px 0 0;
+}
+.script .tabs-section-nav.tabs-section-nav-inline .nav-link {
+	color: #9ea0a5;
+}
+.script .tabs-section-nav.tabs-section-nav-inline .nav-link.active {
+	color: #fff;
+	border-bottom: 3px solid #1665d8;
+}
+
+.widget-toggle {
+	position: absolute;
+	right: 0;
+}
+
+/*** Container ***/
+.box-typical {
+	border: 1px solid #eaedf3;
+	margin: 0 0 30px;
+}
+.box-dark {
+	background-color: #303136;
+}
+.box-typical.box-typical-padding {
+	padding: 28px 25px;
+}
+.card-header {
+	font-family: 'Roboto';
+	font-size: 1rem !important;
+	font-weight: 400;
+}
+.card-header.card-header-lg {
+	padding: 25px;
+}
+
+/*** Table ***/
+.table-heading {
+	padding: 30px 20px !important;
+}
+table th {
+	background: #f5f5f6 !important;
+	color: #3e3f42 !important;
+	font-family: 'Colfax-Regular';
+	padding: 15px !important;
+}
+table td {
+	padding: 15px !important;
+}
+table td p {
+	margin: 0;
+}
+table td strong {
+	color: #737373;
+	font-family: 'AvenirLTStd-Medium';
+}
+
+.t-cell {
+	display: table-cell;
+}
+
+/*** Form ***/
+.form-group .form-label {
+	font-family: 'Colfax-Regular';
+	font-size: 12px !important;
+	text-transform: uppercase;
+}
+
+/** List ***/
+ul.list li {
+	display: block;
+	border-bottom: 1px solid #eaedf3;
+}
+ul.list li.current,
+ul.list li:hover {
+	background-color: #f6f9fd;
+}
+ul.list li.current {
+	border-left: 3px solid #2dd850;
+}
+ul.list li span {
+	color: #3e3f42 !important;
+}
+ul.list li.current span {
+	font-family: 'Colfax-Medium';
+}
+ul.list li i {
+	background-color: #ebebeb;
+	border-radius: 50%;
+	padding: 8px 10px;
+	margin-right: 30px;
+}
+ul.inline li {
+	display: inline;
+	margin-right: 15px;
+}
+ul.inline-block li {
+	display: inline-block;
+}
+
+/*** Alignment ***/
+.align-middle {
+	vertical-align: middle;
+}
+.align-top {
+	vertical-align: top;
+}
+
+/*** Fonts ***/
+.font-sm {
+	font-family: 'AvenirLTStd-Medium';
+	font-size: 12px;
+}
+.font-light {
+	font-family: 'Colfax-Light';
+}
+.font-bold {
+	font-family: 'Colfax-Regular';
+}
+.font-black {
+	font-family: 'Colfax-Medium';
+}
+
+/*** Colors ***/
+.color-primary {
+	color: #2dd850 !important;
+}
+.color-grey {
+	color: #9ea0a5 !important;
+}
+.color-dark {
+	color: #6c6d70 !important;
+}
+.color-black {
+	color: #3e3f42 !important;
+}
+
+
+/*** Button ***/
+.btn {
+	font-family: 'Roboto';
+	font-size: 14px;
+	font-weight: 300;
+	min-width: 80px;
+}
+.btn-primary:hover {
+	background-color: #f7f8fa !important;
+	border: 1px solid #d8dce6 !important;
+	color: #717274 !important;
+}
+.btn-auto {
+	min-width: auto;
+}
+.btn-white {
+	background-color: #f7f8fa;
+	border: 1px solid #d8dce6;
+	color: #3e3f42;
+}
+.btn-white:hover {
+	background-color: #2dd850;
+	border: 1px solid #fff;
+	color: #fff;
+}
+.btn-icon {
+	margin-top: 10px;
+}
+.btn-group .dropdown-toggle::after {
+	display: none;
+}
+.btn-group .btn {
+	color: #2dd850 !important;
+	font-family: 'Colfax-Medium' !important;
+	margin-top: 10px;
+}
+
+/*** Modal ***/
+.modal-dialog {
+	margin: 100px auto 0;
+}
+.modal-header,
+.modal-body,
+.modal-footer {
+	padding: 20px 30px;
+}
+.modal-header,
+.modal-footer {
+	border-bottom-color: #eaedf3;
+}
+.modal-title {
+	font-family: 'Roboto';
+	color: #3e3f42;
+	text-align: left;
+}
+.modal-body strong {
+	font-family: 'Colfax-Medium';
+	color: #9ea0a5;
+}
+.modal-footer {
+	text-align: left;
+}
+
+#connect-fb .tab:before {
+	content:"";
+	background: url('../img/step-title.gif') no-repeat;
+	display: block;
+	position: absolute;
+	margin: 5px 0 0 -30px;
+	height: 16px;
+	width: 16px;
+}
+
+#reminder .modal-dialog {
+	max-width: 1000px;
+	width: 100% !important;
+}
+#reminder .modal-content {
+	background: transparent;
+	border: 0 none;
+}
+#reminder .modal-header {
+	background-color: #fff;
+	border-radius: 6px;
+	margin-bottom: 20px;
+}
+#reminder .modal-header, 
+#reminder .modal-body, 
+#reminder .modal-footer {
+	padding: 0;
+	border: 0 none;	
+}
+#reminder .modal-footer {
+	text-align: center;
+	margin: 35px 0;
+}
+#reminder .modal-footer button {
+	margin: 0 6px;
+}
+#reminder .cell-block {
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 0;
+}
+#reminder .cell-block .card {
+	border: 0 none;
+}
+#reminder ul li {
+	margin: 0 20px;
+}
+#reminder ul li a {
+	color: inherit;
+	display: inline-block;
+	padding: 25px 0;
+}
+#reminder ul li.active a {
+	color: #3e3f42;
+	font-family: 'Colfax-Regular';
+	border-bottom: 3px solid #2dd850;
+}
+#reminder .widget-toggle {
+	top: 25px;
+}
+
+.mobile-preview {
+	background: url('../img/mobile-preview.jpg') no-repeat scroll center;
+	height: 586px;
+	margin: 0 auto;
+	padding: 80px 30px;
+	width: 295px;
+}
+.mobile-preview img.logo {
+	margin-right: 10px;
+}
+.mobile-preview .search {
+	background-color: #f5f5f5;
+	border: 0 none;
+	height: 22px;
+	line-height: 22px;
+	padding: .75rem;
+}
+.mobile-preview .search,
+.content-preview button {
+	border-radius: 13px;
+	font-size: 12px;
+}
+.search-preview .form-group {
+	margin: 0;
+	min-width: 205px;
+}
+.mobile-preview p,
+.mobile-preview button,
+.mobile-preview textarea,
+.mobile-preview input,
+.mobile-preview textarea::placeholder,
+.mobile-preview .search::placeholder {
+	font-size: 12px !important;
+}
+.mobile-preview .image-preview {
+	border: 1px solid #fafafc;
+	text-align: center;
+	margin: 12px auto;
+	padding: 7px 0;
+}
+.mobile-preview p {
+	text-align: left;
+	line-height: 18px;
+}
+.content-preview button {
+	padding: 4px 10px 3px;
+}
+
+/*** Hide all steps by default ***/
+.tab {
+  display: none;
+}
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+.step.active {
+  opacity: 1;
+}
+.step.finish {
+  background-color: #4CAF50;
+}
+
+/*** Bottom Section ***/
+.copyright {
+	border-top: 1px solid #2e2e33;
+	padding: 10px 30px;
+}
+.copyright span {
+	font-size: 14px;
+	font-weight: 300;
+	color: #fff;
+}
+#footer-menu {
+	border-top: 1px solid #2e2e33;
+	margin: 150px 30px 10px;
+	padding-top: 20px;
+}
+#footer-menu .title {
+	padding-bottom: 10px;
+}
+#footer-menu .title > span {
+	color: #9ea0a5;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin: 0;
+	padding-left: 5px;
+}
+#footer-menu li.current a,
+#footer-menu li a:active,
+#footer-menu li a:hover {
+	background-color: transparent !important;
+}
+#footer-menu .side-menu-list a {
+	padding: 10px 0;
+	margin: 0;
+}
+
+
+/*** Responsive ***/
+@media only screen and (max-width: 1048px) {
+	.site-header .site-logo {
+		background-color: transparent !important;
+	}
+}
+
+@media only screen and (min-width: 1240px) {
+	.right-sidebar,
+	.left-content,
+	.right-content {
+		display: table-cell;
+	}
+}
+
+@media only screen and (min-width: 1600px) {
+	.right-sidebar {
+		min-width: 350px;
+	}
+}
+
+@media only screen and (min-width: 1048px) {
+	.with-side-menu .side-content {
+		padding: 68px 15px 10px 240px;
+		width: 100%;
+	}
+	.right-sidebar,
+	.left-content,
+	.right-sidebar {
+		height: 100%;
+		min-width: 350px;
+		min-height: 100vh;
+		padding: 0;
+	}
+	.right-sidebar {
+		min-width: 300px;
+	}
+	.right-content {
+		padding-left: 30px;
+		width: 100%;
+	}
+	.col-3-page .right-content {
+		padding: 30px 30px 0;
+	}
+	.script-content,
+	.right-sidebar,
+	.left-content,
+	.right-content {
+		height: 100vh;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.cell-container .cell-block:nth-child(1) {
+		padding-right: 30px;
+	}
+	.cell-block {
+		display: table-cell;
+		width: 48%;
+	}
+	.viewers {
+		text-align: right;
+	}
+	.live .dropdown li {
+		border: 1px solid #e0e0e0;
+		border-radius: 50%;
+	}
+}
+
+@media only screen and (max-width: 960px) {
+	.with-side-menu .side-content {
+		margin: 20px;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+	.live .dropdown {
+		top: 23px;
+	}
+	.viewers {
+		text-align: center;
+	}
+	.total-views {
+		display: block;
+		max-width: 135px;
+		margin: 20px auto 0;
+	}
+	.live-views .info {
+		text-align: center;
+	}
+	.live-views .img-holder img {
+		margin: 10px;
+	}
+	.live .title-header, 
+	.indicator {
+		display: block
+		max-width: 100%;
+	}
+	.indicator {
+		margin: 10px 0 0 30px;
+	}
+	#reminder {
+		padding: 0 15px !important;
+	}
+}

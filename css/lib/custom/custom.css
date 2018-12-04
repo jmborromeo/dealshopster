@@ -1,0 +1,19 @@
+.box-typical-inner {
+	padding: 0 16px;
+}
+
+.dataTables_wrapper #example_length {
+	display: none;
+}
+
+.field-static {
+	padding: 0 20px;
+}
+
+.dropdown.dropdown-typical a.no-caret::after {
+	display: none;	
+}
+
+.site-header .dropdown.dropdown-typical a.dropdown-toggle .lbl {
+	display: inline !important;
+}
