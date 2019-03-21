@@ -1,0 +1,122 @@
+/* Style the form */
+.stepper {
+    background-color: #fff;
+}
+#regForm {
+  background-color: #fff;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step-indicator {
+    position: relative;
+    text-align:center; 
+    padding: 45px 0 80px;
+}
+
+
+.step-indicator li {
+    display: inline-block;
+    width: 17%;
+}
+.step-indicator li:after {
+    content: '';
+    position: absolute;
+    background: #f1f1f1;
+    display: block;
+    width: 52%;
+    height: 2px;
+    top: 92px;
+    left: 24%;
+    z-index: 1;
+}
+.step-indicator .step-label {
+    font-size: 12px !important;
+    font-weight: 700;
+}
+.step-label.active {
+    color: #3f3f41 !important; 
+}
+.step {
+    position: absolute;
+    background: url('../img/step-inactive.png') no-repeat scroll center;
+    height: 26px;
+    width: 26px;
+    border: none; 
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: -14px;
+    z-index: 5;
+}
+
+/* Mark the active step: */
+.step.active,
+.step.finish {
+    background: url('../img/step-active.png') no-repeat scroll center;
+    border: 2px solid #fff;
+    box-shadow: 5px 5px 5px #eee;
+    height: 30px;
+    width: 30px;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+
+.step-btn {
+    margin: 100px 0 20px;
+    text-align: right;
+}
+
+.step-btn button,
+.step-btn button:hover {
+    background: transparent;
+    border: 0 none;
+    color: #2cd850;
+    font-size: 16px;
+}
+.step-btn button#prevBtn {
+    color: #9ea0a5;
+}
+.step-btn button#prevBtn:before,
+.step-btn button#nextBtn:after {
+    font: normal normal normal 12px/1 FontAwesome;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+}
+.step-btn button#nextBtn:after {
+    content: "\f054";
+    margin-left: 8px;
+}
+.step-btn button#prevBtn:before  {
+    content: "\f053";
+    margin-right: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+    .step-indicator li .step-label {
+        display: none;
+    }
+    .step-indicator li::after {
+        width: 51%;
+        left: 25%;
+        top: 57px;
+    }
+    .step {
+        position: relative;
+        margin: 0;
+    }
+}

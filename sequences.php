@@ -82,29 +82,27 @@
 							</header>
 							<div class="card-block text-center">
 								<div class="mobile-preview">
-									<div class="search-preview">
-										<div class="t-cell">
-											<div class="t-cell align-middle">
-												<img class="logo" src="img/cart-mobile-logo.png" alt="Deal Shopster" height="20" width="17" />
-											</div>
-											<div class="t-cell align-middle">
-												<fieldset class="form-group">
-													<input type="text" class="form-control search" placeholder="Leave something behind?">
-												</fieldset>
-											</div>
+									<div class="t-cell text-left align-bottom">
+										<img class="msg-logo" src="img/cart-mobile-logo.png" alt="Deal Shopster" height="20" width="17" />
+									</div>
+									<div class="t-cell text-left">
+										<div class="date">
+											<span>Feb 27, 03:30 PM</span>
 										</div>
-									</div>
-									<div class="image-preview">
-										<img src="img/img-preview.jpg" alt="" />
-									</div>
-									<div class="content-preview">
-										<p>Specifying the discount code here allows our links to automatically enable the discount code on checkout. You can create one here.</p>
-										<fieldset class="form-group">
-											<textarea rows="2" class="form-control" placeholder="Remind the customer of the discount here (e.g."Checkout(15% Off)."></textarea>
-										</fieldset>
-										<fieldset>
-											<button type="button" class="btn btn-inline btn-primary">Save</button>
-										</fieldset>
+										<div class="message">
+											<p>Leave something behind?</p>
+										</div>
+										<div class="featured-img">
+											<img src="img/mobile-preview.png" alt="" />
+										</div>
+										<div class="checkout">
+											<strong>SAVE15 for 15% off</strong>
+											<span class="price">$25.00</span>
+											<span class="btn">Checkout Now</span>
+										</div>
+										<div class="message">
+											<p>Specifying the discount code here allows our links to automatically enable the discount code on checkout. You can create one here.</p>
+										</div>
 									</div>
 								</div>
 							</div>
